@@ -1,0 +1,22 @@
+package com.liceolapaz.des.mass;
+
+public class Principal { // linea de declaración de paquete
+
+	public static void main(String[] args) {
+
+		// Definicion de variables con String
+		/*
+		 * tipos string definimosuna variable ej saludar = asginar valor y "" cadena de
+		 * impresión con esto definimos una variable tipo string
+		 */
+		String saludar = "Hola Kentucky";
+		/*
+		 * para imprimir solo hay que poner el nombre de la variable
+		 */
+		System.out.println(saludar);
+		System.out.println(saludar);
+		System.out.println(saludar); // sysout con ctrl y espacio autocompleta
+
+	}
+
+}

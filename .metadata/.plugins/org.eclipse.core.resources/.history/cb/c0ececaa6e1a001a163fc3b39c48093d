@@ -1,0 +1,12 @@
+package com.liceolapaz.des.mass;
+
+public class Principal { //linea de declaración de paquete
+	
+
+	public static void main(String[] args) {
+		System.out.println("Hola Kentucky"); //sysout con ctrl y espacio autocompleta
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package puzzleNumeros;
+
+public class Principal {
+
+	public static void main (String [] args) {
+		
+
+	}//fin del main
+
+}//fin clase puzzle

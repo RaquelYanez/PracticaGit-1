@@ -1,0 +1,35 @@
+package puzzleNumeros;
+
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+
+
+public class Tablero extends JPanel {
+	private Ventana ventana;
+	private int filas;
+	private int columnas;
+	private Boton[][] botones;
+
+	public Tablero(Ventana ventana, int filas, int columnas) {
+		super();
+		this.ventana = ventana;
+		this.filas = filas;
+		this.columnas = columnas;
+		setLayout(new GridLayout(4, 4));
+		crearBotones();
+	}
+
+	private void crearBotones() {
+		this.botones = new Boton[this.filas][this.columnas];
+		for (int fila = 0; fila < this.filas; fila++) {
+			for (int columna = 0; columna < this.columnas; columna++) {
+				this.botones[fila][columna] = new Boton(this, fila, columna, 0);
+				add(this.botones[fila][columna]);
+			}
+			
+
+		}//fin del for botones
+	int valor = 0;
+	}//fin crear botones
+}//fin clase tablero

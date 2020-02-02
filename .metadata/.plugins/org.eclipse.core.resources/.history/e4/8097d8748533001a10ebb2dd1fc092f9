@@ -1,0 +1,35 @@
+
+public class BlackJack {
+
+	public static void main(String[] args) {
+		while (true) {
+			escribirMenu();
+			pedirOpcion();
+			int opcion = pedirOpcion();
+			if (opcion == 0) { // si opcion es igual a cero salimos
+				System.exit(0);
+			}else if (opcion == 1) {
+				while (true) {
+					int puntuacionCrupier = 0;
+				}
+					
+			}else if (opcion==2) {
+				
+			}else {
+				System.out.println("Opción no valida");
+			}
+		}
+
+	}
+
+	private static void pedirOpcion() {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void escribirMenu() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

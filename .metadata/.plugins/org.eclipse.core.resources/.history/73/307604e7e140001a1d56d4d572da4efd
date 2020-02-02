@@ -1,0 +1,21 @@
+package puzzleNumeros;
+
+import java.net.URL;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+
+public class Ventana extends JFrame {
+	public Ventana() {
+		super();
+		setTitle("Puzzle Números");
+		setSize(400, 400);
+		setLocationRelativeTo(null);
+		setResizable(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		URL url = getClass().getResource("");
+		setIconImage(new ImageIcon(url).getImage());
+		//crearMenu();
+		//crearTablero();
+	}
+}

@@ -1,0 +1,49 @@
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+import javax.swing.border.LineBorder;
+
+public class Tablero extends JPanel {
+	public Ventana ventana;
+	// variables de filas y columnas
+	private int filas;
+	private int columnas;
+	// variable para turno del jugador
+	private int turno;
+	// botones
+	private Boton[][] botones;
+
+	public Tablero(Ventana ventana, int filas, int columnas) {
+		super();
+		this.ventana = ventana;
+		this.filas = filas;
+		this.columnas = columnas;
+		// Que va a tener el tablero
+		// Borde
+		setBorder(new LineBorder(Color.RED, 5));
+		setLayout(new GridLayout(this.filas, this.columnas)); //constructor de capas para colocar filas y columnas. GRID nos crea filas y columnas
+		// metodo para crear botones
+		crearBotones();
+		generarTurno();
+		
+
+	}
+
+	private void generarTurno() {
+this.generarTurno = generarNumeroAleatorio(min, max);		
+	}
+
+	private void crearBotones() {
+		botones = new Boton [filas][columnas];
+		for (int filas = 0; filas < this.filas; filas++) {//recorren las filas del array
+			
+			for (int columnas = 0; columnas < this.columnas; columnas++) {//recorren las columnas del array
+				botones [filas][columnas] = new Boton (this, filas, columnas);
+				add(this.botones[filas][columnas]);
+				
+			}
+		}
+	}
+
+}

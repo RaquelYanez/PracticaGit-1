@@ -1,0 +1,44 @@
+package org.liceolapaz.des.MASS;
+
+import java.util.Scanner;
+
+import javax.sound.midi.SysexMessage;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		menuPrincipal(); // hacemos metodo con el menu principal
+		int opcion = leerOpcion(); // guardamos en la variable
+		
+		switch (opcion) {
+		case 0:
+			System.exit(0);
+
+		case 1:
+			pedirRuta();
+			String ruta = leerRuta();
+			
+		}
+	}
+
+	private static String leerRuta() {
+		Scanner scan = new Scanner(System.in);
+		
+		return null;
+	}
+
+	private static void pedirRuta() {
+		System.out.println("Introduzca ruta del fichero: ");
+	}
+
+	private static int leerOpcion() {
+		Scanner scan = new Scanner(System.in);
+		return scan.nextInt();
+	}
+
+	private static void menuPrincipal() {
+		System.out.println("FICHEROS\n" + "1. Leer fichero de texto\n" + "2. Copiar fichero\n"
+				+ "3. Listar archivos de directorio\n" + "0. Salir\n" + "Escoja una opción:");
+	}
+
+}

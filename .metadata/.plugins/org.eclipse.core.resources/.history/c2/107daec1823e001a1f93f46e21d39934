@@ -1,0 +1,43 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+
+public class Boton extends JButton {
+	private static final ImageIcon iconoCirculo = new ImageIcon(Boton.class.getClass().getResource("/circulo.png");
+	private static final ImageIcon iconoCruz = new ImageIcon(Boton.class.getClass().getResource("/cruz.png");
+
+	private Tablero tablero;
+	private int fila;
+	private int columna;
+
+	public Boton(Tablero tablero, int fila, int columna) {
+		super();
+		this.tablero = tablero;
+		this.fila = fila;
+		this.columna = columna;
+		setBackground(Color.black);// color del cuadrado
+		// escuchar lo que se introduce
+		addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				pulsar();
+			}
+
+			private void pulsar() {
+				int turno = tablero.getTurno();
+				if (turno == Tablero.TURNO_CIRCULO) {
+					setIcon(iconoCirculo);
+				} else if (turno == Tablero.TURNO_CRUZ) {
+					setIcon(iconoCruz);
+
+				}
+			}
+		});
+
+	}
+
+}

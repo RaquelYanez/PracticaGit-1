@@ -1,0 +1,17 @@
+package puzzleNumeros;
+
+import javax.swing.JButton;
+
+public class Boton extends JButton{
+	private Tablero tablero;
+	private int fila;
+	private int columna;
+	
+	public Boton(Tablero tablero, int fila, int columna) {
+		this.tablero = tablero;
+		this.fila = fila;
+		this.columna = columna;
+	}
+	
+
+}

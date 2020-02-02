@@ -1,0 +1,26 @@
+package FigBien;
+
+public class Triangulo {
+	// definir atrbutos
+	private float base;
+	private float altura;
+
+	public Triangulo(float base, float altura) { // float espera los aprametros float siguientes
+		this.base = base;
+		this.altura = altura;
+	}
+	// Lo anterio todo es el constructor
+
+	// Creamos nuevo metodo público que nos retornará un double sin parámetros
+	public double obtenerPerimetro() {
+		double perimetro = 2*altura+base;
+		return perimetro;
+
+		//Creamos otro metodo que sea para obtener área
+		public double obtenerArea ( ) {
+			//Hacemos otra variable de tipo double para calcular el area 
+			double area = ()/2;
+			return area;
+		}
+	}
+}

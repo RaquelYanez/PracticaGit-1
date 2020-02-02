@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Ejecutable&apos; to &apos;gitHub.Ejecutable&apos;&#x0A;- Original project: &apos;ProyectoJavaGitHub&apos;&#x0A;- Original element: &apos;ProyectoJavaGitHub/src/Ejecutable&apos;&#x0A;- Renamed element: &apos;ProyectoJavaGitHub/src/gitHub.Ejecutable&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Ejecutable&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Ejecutable" name="gitHub.Ejecutable" qualified="false" references="true" stamp="1580283802313" textual="false" version="1.0"/>
+</session>

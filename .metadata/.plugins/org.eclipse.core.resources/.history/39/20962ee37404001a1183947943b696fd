@@ -1,0 +1,17 @@
+ package FigBien;
+
+import java.util.Scanner;
+
+public class Principal {
+	public static void main(String[]args) {
+		Scanner entrada = new Scanner (System.in);
+		
+		Rectangulo rect1 = new Rectangulo (2,5);
+		Rectangulo rect2=new Rectangulo (8,14);
+		
+		System.out.println("El area 1 es: ");
+		System.out.println("El area 2 es: ");
+		
+	}
+
+}

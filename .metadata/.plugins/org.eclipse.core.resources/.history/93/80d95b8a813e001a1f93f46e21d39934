@@ -1,0 +1,24 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+
+import javax.swing.JButton;
+
+public class Boton extends JButton {
+	private Tablero tablero;
+	private int fila;
+	private int columna;
+	
+	public Boton(Tablero tablero, int fila, int columna) {
+		super();
+		this.tablero = tablero;
+		this.fila = fila;
+		this.columna = columna;
+		setBackground(Color.black);//color del cuadrado
+		//escuchar lo que se introduce
+		addActionListener(ActionEvent e){
+			pulsar();
+		}
+		
+	}
+
+}

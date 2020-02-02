@@ -1,0 +1,32 @@
+package puzzleNumeros;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+
+public class Boton extends JButton{
+	private Tablero tablero;
+	private int fila;
+	private int columna;
+	private int valor;
+	
+	public Boton(Tablero tablero, int fila, int columna, int valor) {
+		super();
+		this.tablero = tablero;
+		this.fila = fila;
+		this.columna = columna;
+		setValor(valor);
+		setBackground(Color.BLUE);
+		setForeground(Color.WHITE);//Color letras
+	}
+	
+public int getValor() {
+	return valor;
+}
+public void setValor(int valor) {
+	this.valor = valor;
+	setText ("" + valor);
+
+}
+
+}

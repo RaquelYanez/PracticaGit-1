@@ -1,0 +1,18 @@
+package puzzleNumeros;
+
+import javax.swing.JPanel;
+
+public class Tablero extends JPanel {
+	private Ventana ventana;
+	private int filas;
+	private int columnas;
+	
+	public Tablero(Ventana ventana, int filas, int columnas) {
+	super();
+	this.ventana = ventana;
+	this.filas = filas;
+	this.columnas = columnas;
+	
+	}
+
+}

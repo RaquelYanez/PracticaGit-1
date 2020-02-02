@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;liceolapaz.MASS&apos; to &apos;liceolapaz.des.MASS&apos;&#x0A;- Original project: &apos;BlackJack&apos;&#x0A;- Original element: &apos;BlackJack/src/liceolapaz.MASS&apos;&#x0A;- Renamed element: &apos;BlackJack/src/liceolapaz.des.MASS&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;liceolapaz.MASS&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;liceolapaz.MASS" name="liceolapaz.des.MASS" qualified="false" references="true" stamp="1574255637291" textual="false" version="1.0"/>
+</session>
